@@ -52,16 +52,17 @@ class UClient {
 		}
 		return $return;
 	}
-	
-	/**
-	 * 同步登陆
-	 * @param string $uid
-	 * @return string javascript用户同步登陆js
-	 */
-	public function ps_member_synlogin($uid) {
-		$uid = intval($uid);
-		return $this->_ps_send('synlogin', array('uid'=>$uid));
-	}
+
+    /**
+     * 同步登陆
+     * @param string $uid
+     * @param string $password
+     * @return string javascript用户同步登陆js
+     */
+    public function ps_member_synlogin($uid,$password='') {
+        $uid = intval($uid);
+        return $this->_ps_send('synlogin', array('uid'=>$uid,'password'=>$password));
+    }
 
 	/**
 	 * 同步退出
