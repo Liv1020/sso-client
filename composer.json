@@ -1,0 +1,7 @@
+{
+    "name": "liv/sso-client",
+    "description": "SSO Client Lib",
+    "require": {
+      "php": ">=5.3.0"
+    }
+}
