@@ -1,6 +1,6 @@
 <?php
 
-class client {
+class UClient {
 
 	private $ps_api_url, $ps_auth_key, $ps_vsersion;
 
