@@ -69,9 +69,9 @@ class UClient {
 	 * @param string $uid
 	 * @return string javascript用户同步退出js
 	 */
-	public function ps_member_synlogout() {
-		return $this->_ps_send('synlogout', array());
-	}
+    public function ps_member_synlogout() {
+        return $this->_ps_send('synlogout', array('username'=>''));
+    }
 	
 	/**
 	 * 编辑用户
