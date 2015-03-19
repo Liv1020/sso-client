@@ -4,7 +4,9 @@ namespace SSO;
 
 class UClient {
 
-	private $ps_api_url, $ps_auth_key, $ps_vsersion;
+	private $ps_api_url;
+    private $ps_auth_key;
+    private $ps_vsersion;
 
     /**
      * 析构函数
